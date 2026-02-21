@@ -4,29 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abhishek Sharma — Design Strategist | Enterprise UX</title>
-<meta name="description" content="Abhishek Sharma — Senior Product Designer & Design Strategist with 10+ years delivering enterprise UX, Agentic AI, and design systems for Vodafone, Deloitte, and HDFC Bank. Open to senior design leadership roles; contact via LinkedIn.">
-  <meta name="author" content="Abhishek Sharma">
-  <meta name="keywords" content="Product Designer, Design Strategist, Enterprise UX, Agentic AI, Design Systems, UX Research, Interaction Design, Senior Designer, Design Lead">
-  <meta name="robots" content="index, follow">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Abhishek Sharma — Design Strategist | Enterprise UX">
-  <meta property="og:description" content="Senior Product Designer & Design Strategist with 10+ years building enterprise UX, Gen AI tools, and design systems. Open to leadership roles.">
-  <meta property="og:type" content="website">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Abhishek Sharma — Design Strategist | Enterprise UX">
-  <meta name="twitter:description" content="Senior Product Designer & Design Strategist — enterprise UX, Agentic AI, and design systems.">
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abhishek Sharma",
-    "jobTitle": "Design Strategist, Product Designer",
-    "worksFor": {"@type": "Organization", "name": "Vodafone VOIS"},
-    "sameAs": ["https://www.linkedin.com/in/abhishekuxd"],
-    "description": "Senior Product Designer & Design Strategist with 10+ years delivering enterprise UX, Agentic AI, and design systems."
-  }</script>
-  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23ff6600'/><text x='50' y='64' font-size='50' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-weight='700'>A</text></svg>" type="image/svg+xml">
+<meta name="description" content="Product Designer & Design Strategist with 10+ years crafting enterprise UX, AI-powered tools, and design systems for Vodafone, Deloitte, HDFC Bank, and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -584,6 +562,60 @@
   [data-theme="dark"] .outcome { background: rgba(224,92,58,0.08); }
 
 
+
+  /* ARCHIVE PROJECTS */
+  .archive-bg { background: var(--paper); border-top: 1px solid var(--border); }
+  .archive-toggle {
+    display: flex; align-items: center; gap: 16px;
+    cursor: none; padding: 32px 0;
+    border: none; background: none; width: 100%; text-align: left;
+  }
+  .archive-toggle-label {
+    font-family: 'DM Mono', monospace; font-size: 10px;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted);
+  }
+  .archive-toggle-line { flex: 1; height: 1px; background: var(--border); }
+  .archive-toggle-icon {
+    font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted);
+    transition: transform 0.3s ease;
+  }
+  .archive-toggle.open .archive-toggle-icon { transform: rotate(180deg); }
+  .archive-list {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; background: var(--border);
+    margin-bottom: 64px;
+  }
+  .archive-list.open { display: grid; }
+  .archive-item {
+    background: var(--paper); padding: 24px 20px;
+    transition: background 0.2s;
+  }
+  .archive-item:hover { background: var(--cream); }
+  [data-theme="dark"] .archive-item { background: var(--paper); }
+  [data-theme="dark"] .archive-item:hover { background: var(--cream); }
+  .arc-year {
+    font-family: 'DM Mono', monospace; font-size: 9px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 8px;
+  }
+  .arc-name {
+    font-family: 'Playfair Display', serif; font-size: 16px;
+    font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--ink);
+  }
+  .arc-client {
+    font-size: 12px; color: var(--muted); margin-bottom: 12px; line-height: 1.5;
+  }
+  .arc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .arc-tag {
+    font-family: 'DM Mono', monospace; font-size: 8px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 3px 8px; border: 1px solid var(--border); color: var(--muted);
+  }
+  @media (max-width: 900px) {
+    .archive-list { grid-template-columns: repeat(2,1fr); }
+  }
+
   /* RECOMMENDATIONS */
   .reco-bg { background: var(--cream); }
   .reco-grid {
@@ -873,18 +905,12 @@
       <div class="ptype">AI · Sales Enablement · Singapore</div>
       <div class="pname">Mindreader AI</div>
       <p class="pdesc">Redesigned a sales communication AI from "horoscope-like" to credible professional tool. Full strategy: heuristic eval, competitive analysis, persona definition, IA redesign, complete UI system, and dev-ready "Design at a Glance" documentation.</p>
-      <div style="margin-top:12px;">
-        <a class="btn-ink" href="https://themindreader.ai/" target="_blank" rel="noopener noreferrer">View in action</a>
-      </div>
     </div>
     <div class="pcard">
       <div class="pn">✦</div>
       <div class="ptype">Mobile · Government of India · New Delhi</div>
       <div class="pname">Digital Sansad App</div>
       <p class="pdesc">Led end-to-end design for NIC/Deloitte's parliamentary app — IA, wireframes, visual design, and mobile team management over 6 months. Used by Members of Parliament across India.</p>
-      <div style="margin-top:12px;">
-        <a class="btn-ink" href="https://sansad.in/ls" target="_blank" rel="noopener noreferrer">View in action</a>
-      </div>
     </div>
     <div class="pcard">
       <div class="pn">✦</div>
@@ -969,6 +995,76 @@
     </div>
   </div>
 
+</section>
+
+<!-- ARCHIVE -->
+<section class="archive-bg">
+  <div class="container">
+    <button class="archive-toggle" id="archiveToggle">
+      <span class="archive-toggle-label">More work — archive</span>
+      <span class="archive-toggle-line"></span>
+      <span class="archive-toggle-icon">↓</span>
+    </button>
+    <div class="archive-list" id="archiveList">
+
+      <div class="archive-item">
+        <div class="arc-year">2015–2017 · Capgemini</div>
+        <div class="arc-name">PC Management App</div>
+        <div class="arc-client">Client: Computer Manufacturer Giant — Requirement Gathering, Expert Review, IA, Hi-fi Wireframes (Balsamiq). Solved high drop-off during sign-up through Hub & Spoke IA model.</div>
+        <div class="arc-tags"><span class="arc-tag">Mobile UX</span><span class="arc-tag">Heuristic Eval</span><span class="arc-tag">IA</span><span class="arc-tag">Wireframes</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2018–2020 · Capgemini</div>
+        <div class="arc-name">NTR Web App</div>
+        <div class="arc-client">Client: Network Steering Management Company — Redesigned a complex telecom web portal. Persona research (5 employee interviews), IA restructure, Axure RP wireframes for Roaming CEM Dashboard.</div>
+        <div class="arc-tags"><span class="arc-tag">Enterprise Web</span><span class="arc-tag">Telecom</span><span class="arc-tag">Axure RP</span><span class="arc-tag">Persona</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2018–2019 · Techved</div>
+        <div class="arc-name">Sevarat — Senior Care</div>
+        <div class="arc-client">Client: Senior Care Services — Full UX for a senior care platform covering service booking, associate tracking, and e-commerce. Competitive analysis of 3 major players, 3 personas (target: 28–40 yrs), full IA for both customer and associate apps.</div>
+        <div class="arc-tags"><span class="arc-tag">Mobile App</span><span class="arc-tag">HealthTech</span><span class="arc-tag">Competitive Analysis</span><span class="arc-tag">E-Commerce</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2017 · Capgemini</div>
+        <div class="arc-name">Admin Console</div>
+        <div class="arc-client">Client: IT Service Provider (Internal) — Converted provided wireframes into full visual design for an enterprise IT administration console with status summaries, ETI dashboards, and data source configuration.</div>
+        <div class="arc-tags"><span class="arc-tag">Enterprise UI</span><span class="arc-tag">Dashboard</span><span class="arc-tag">Visual Design</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2019 · Techved</div>
+        <div class="arc-name">myBooks — Accounting App</div>
+        <div class="arc-client">Client: Zetran Technologies — Web and mobile accounting app design. Dashboard with cash flow charts, expense tracking, revenue overview, and business KPIs. Consistent cross-platform design system.</div>
+        <div class="arc-tags"><span class="arc-tag">FinTech</span><span class="arc-tag">Web + Mobile</span><span class="arc-tag">Dashboard</span><span class="arc-tag">Data Viz</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2019 · Techved</div>
+        <div class="arc-name">bitWiser.io</div>
+        <div class="arc-client">Client: BitWiser (Android & iOS) — Redesign of existing mobile quiz/learning app with Gamification integration following the Octalysis Framework. New UI with leaderboards, multiplayer mode, and reward mechanics.</div>
+        <div class="arc-tags"><span class="arc-tag">Gamification</span><span class="arc-tag">Mobile Redesign</span><span class="arc-tag">Octalysis</span><span class="arc-tag">EdTech</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2016 · Capgemini</div>
+        <div class="arc-name">Procurement App</div>
+        <div class="arc-client">Client: Public Electricity Provider (Internal) — Internal procurement tool UI design for a public sector energy client.</div>
+        <div class="arc-tags"><span class="arc-tag">Internal Tool</span><span class="arc-tag">Public Sector</span><span class="arc-tag">UI Design</span></div>
+      </div>
+
+      <div class="archive-item">
+        <div class="arc-year">2019 · Freelance</div>
+        <div class="arc-name">BFLY — Leaderboard & Venues</div>
+        <div class="arc-client">Client: BFLY (getbfly.com) — Extended BFLY visual design to include the full leaderboard (Top 10, Prizes, Store, Profile tabs), venue partner pages, and Octalysis gamification layer across the full app.</div>
+        <div class="arc-tags"><span class="arc-tag">Gamification</span><span class="arc-tag">Social</span><span class="arc-tag">Octalysis</span><span class="arc-tag">iOS & Android</span></div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- CASE STUDY -->
@@ -1215,6 +1311,14 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Archive toggle
+  const archiveToggle = document.getElementById('archiveToggle');
+  const archiveList = document.getElementById('archiveList');
+  archiveToggle.addEventListener('click', () => {
+    const isOpen = archiveList.classList.toggle('open');
+    archiveToggle.classList.toggle('open', isOpen);
+  });
+
 
   // Dark mode
   const dmToggle = document.getElementById('dmToggle');
