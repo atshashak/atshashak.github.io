@@ -325,6 +325,14 @@
   .wdesc { font-size: 14px; line-height: 1.7; color: var(--muted); margin-bottom: 24px; }
   .wcta { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
 
+  /* BOOKS */
+  .books-bg { background: var(--paper); }
+  .books-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2px; background: var(--border); }
+  .book-card { background: var(--cream); padding: 36px; display: flex; flex-direction: column; gap: 12px; height: 100%; }
+  .book-meta { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+  .book-title { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; line-height: 1.25; color: var(--ink); }
+  .book-note { font-size: 14px; line-height: 1.65; color: var(--muted); }
+
   /* LINKEDIN BANNER */
   .libanner { background: #071224; padding: 80px 0; }
   .libanner-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
@@ -399,7 +407,7 @@
     .hero-right { display:none; }
     .hero-left { padding:100px 32px 80px; }
     .about-grid,.ctgrid,.csgrid { grid-template-columns:1fr; gap:48px; }
-    .pgrid,.wgrid { grid-template-columns:1fr; }
+    .pgrid,.wgrid,.books-grid { grid-template-columns:1fr; }
     .exprow { grid-template-columns:1fr; gap:8px; }
     .container { padding:0 32px; }
     nav { padding:20px 32px; flex-wrap: wrap; align-items: center; }
@@ -632,6 +640,8 @@
   [data-theme="dark"] .pcard { background: var(--paper); }
   [data-theme="dark"] .wcard { background: var(--cream); }
   [data-theme="dark"] .wcard:hover { background: var(--paper); }
+  [data-theme="dark"] .book-card { background: var(--paper); }
+  [data-theme="dark"] .books-bg { background: var(--paper); }
   [data-theme="dark"] .phase { background: rgba(255,255,255,0.03); }
   [data-theme="dark"] .phase:hover { background: rgba(255,255,255,0.06); }
   [data-theme="dark"] .hero-right-inner { background: #1e1a17; }
@@ -1378,7 +1388,92 @@
         <p class="wdesc">A deep-dive into Gamification as a design strategy — what it is, what it isn't, and how behavioural mechanics from game design can be applied to drive engagement, habit formation, and long-term retention without feeling gimmicky.</p>
         <div class="wcta">Read on Medium →</div>
       </a>
+      <a href="https://www.linkedin.com/pulse/service-design-ux-together-abhishek-sharma" target="_blank" rel="noopener" class="wcard">
+        <div class="wplat">LinkedIn · 2026</div>
+        <div class="wtitle">Service Design + UX, Together</div>
+        <p class="wdesc">LinkedIn Pulse article on blending Service Design and UX practices to build end-to-end, orchestrated experiences that move beyond screens and into the full service journey.</p>
+        <div class="wcta">Read on LinkedIn →</div>
+      </a>
+      <a href="https://www.linkedin.com/posts/abhishekuxd_css-css-productdesign-activity-7400105156979195904-wkOf" target="_blank" rel="noopener" class="wcard">
+        <div class="wplat">LinkedIn · 2026</div>
+        <div class="wtitle">CSS craft in product design</div>
+        <p class="wdesc">LinkedIn post on using thoughtful CSS decisions—spacing, typography, states, and accessibility—to ship production-quality interfaces that feel refined and resilient.</p>
+        <div class="wcta">Read on LinkedIn →</div>
+      </a>
+      <a href="https://www.linkedin.com/posts/abhishekuxd_uxdesign-ai-syntheticusers-activity-7336315935097511938-p3fl" target="_blank" rel="noopener" class="wcard">
+        <div class="wplat">LinkedIn · 2026</div>
+        <div class="wtitle">AI + Synthetic Users for UX</div>
+        <p class="wdesc">LinkedIn post on using synthetic users and AI to simulate feedback loops, stress-test flows, and de-risk UX decisions before real-user testing.</p>
+        <div class="wcta">Read on LinkedIn →</div>
+      </a>
+      <a href="https://www.linkedin.com/posts/abhishekuxd_uxabrdesign-uxdesign-design-activity-7311333047000293377-e3ZR" target="_blank" rel="noopener" class="wcard">
+        <div class="wplat">LinkedIn · 2026</div>
+        <div class="wtitle">UX ≠ UI — Systems First</div>
+        <p class="wdesc">LinkedIn post on going beyond UI polish: designing flows, information architecture, states, and edge cases so the product behaves like a coherent system.</p>
+        <div class="wcta">Read on LinkedIn →</div>
+      </a>
     </div>
+  </div>
+</section>
+
+<!-- BOOKS -->
+<section id="books" class="books-bg">
+  <div class="container">
+    <div class="stag reveal">Bookshelf</div>
+    <h2 class="stitle reveal">Books that sharpen my <em>practice</em></h2>
+    <div class="books-grid reveal">
+      <div class="book-card">
+        <div class="book-meta">History · Systems</div>
+        <div class="book-title">Sapiens — Yuval Noah Harari</div>
+        <p class="book-note">Human history as a lens on behavior, bias, and cooperation — informs how I map mental models, defaults, and incentives into product ecosystems.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Affordances · Feedback</div>
+        <div class="book-title">The Design of Everyday Things — Don Norman</div>
+        <p class="book-note">Affordances, constraints, and error prevention — foundational when crafting flows that make the right action obvious and safe.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Design Thinking</div>
+        <div class="book-title">Change by Design — Tim Brown</div>
+        <p class="book-note">IDEO’s design thinking playbook — keeps me anchored on reframing problems, prototyping early, and co-creating with stakeholders.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Mindset · Courage</div>
+        <div class="book-title">Creative Confidence — Tom Kelley, David Kelley</div>
+        <p class="book-note">Builds muscle for rapid experiments, storytelling, and getting teams comfortable with ambiguity.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Heuristics · QA</div>
+        <div class="book-title">Usability Engineering — Jakob Nielsen</div>
+        <p class="book-note">Evaluation methods, severity ratings, and iterative fixes — a toolkit I apply to triage issues before they reach users.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Culture · Philosophy</div>
+        <div class="book-title">My Gita — Devdutt Pattanaik</div>
+        <p class="book-note">Interprets the Gita through contemporary dilemmas — a reminder to align intent, action, and clarity when making product choices.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Strategy · Statecraft</div>
+        <div class="book-title">Chanakya Neeti — Radhakrishnan Pillai</div>
+        <p class="book-note">Pragmatic tactics on power and incentives — useful when navigating stakeholder dynamics and org design.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Duty · Ethics</div>
+        <div class="book-title">Bhagavad Gita</div>
+        <p class="book-note">Frames action, duty, and detachment — a lens for making clear decisions under pressure.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Mythology · Narratives</div>
+        <div class="book-title">Shiva Puranas</div>
+        <p class="book-note">Mythic storytelling about creation and destruction — sparks narrative thinking for product arcs and lifecycle design.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-meta">Emotions · Relationships</div>
+        <div class="book-title">Relationships and Emotions — Sadhguru</div>
+        <p class="book-note">Perspectives on emotional clarity and empathy — valuable when designing collaborative tools and support journeys.</p>
+      </div>
+    </div>
+    <p class="book-note" style="margin-top:24px;">Any many more</p>
   </div>
 </section>
 
@@ -1440,6 +1535,7 @@
     <a href="/cdn-cgi/l/email-protection#dcbda8afb4bdafb4bdb79cbbb1bdb5b0f2bfb3b1">Email</a>
     <a href="https://abhishekuxd.medium.com" target="_blank">Medium</a>
     <a href="https://adplist.org" target="_blank">ADPList</a>
+    <a href="https://www.upwork.com/freelancers/abhishekuxd" target="_blank" rel="noopener">Upwork</a>
     <a href="https://www.linkedin.com/in/abhishekuxd" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       LinkedIn
@@ -1515,6 +1611,7 @@
       { id: 'projects',        label: 'Work' },
       { id: 'gallery',         label: 'Gallery' },
       { id: 'recommendations', label: 'Reviews' },
+      { id: 'books',           label: 'Books' },
       { id: 'writing',         label: 'Writing' },
       { id: 'contact',         label: 'Contact' },
     ];
